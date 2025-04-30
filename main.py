@@ -1,7 +1,7 @@
 import tkinter as tk
 import re
 
-CURSOR = "_"
+CURSOR = "•"
 blinker_count = 0
 had_error = False
 
@@ -59,7 +59,7 @@ def equal_click():
         
     except (SyntaxError, ZeroDivisionError) as e:
         #screen_text.delete("1.0", "end")
-        err = "\nError: "  + ( "Invalid Math Syntax" if type(e) == SyntaxError else str(e) )
+        err = "\nErr:"  + ( "Invalid Math Syntax" if type(e) == SyntaxError else str(e) )
         screen_text.insert("2.0",  err+"\n")
         screen_text.tag_add("error", f"end-{len(err)+1}c", "end-1c")
         
