@@ -10,6 +10,7 @@ The project is Graphical with Tkinter.
   - Subtraction
   - Multiplication
   - Division
+  - Power
 - Lightweight and easy to use
 - Open-source and beginner-friendly
 - Graphical User Interface 
